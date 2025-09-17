@@ -12,3 +12,7 @@ from .serializers import ProductSerializer
 class ListProductsAPIView(ListAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
+
+class CreateProductAPIView(CreateAPIView):
+    queryset = Product.objects.all()
+    serializer_class = ProductSerializer

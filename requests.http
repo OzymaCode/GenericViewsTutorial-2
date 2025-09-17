@@ -1,6 +1,6 @@
 
 
-GET http://127.0.0.1:8000/api/users
+GET http://127.0.0.1:8000/api/products/
 Content-Type: application/json
 
 ###
@@ -15,14 +15,13 @@ Content-Type: application/json
 
 ###
 
-POST http://127.0.0.1:8000/api/users/
+POST http://127.0.0.1:8000/api/products/create/
 Content-Type: application/json
 
 {
-    "username": "Jack",
-    "deck": {
-        "hello": "hola",
-    }
+    "slug": "t-shirt",
+    "name": "T-shirt",
+    "price": 10
 }
 
 ###
