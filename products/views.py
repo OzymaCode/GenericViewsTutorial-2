@@ -1,37 +1,19 @@
 from rest_framework.generics import (
-    ListAPIView,
-    CreateAPIView,
-    RetrieveAPIView,
-    UpdateAPIView,
-    DestroyAPIView
+    ListCreateAPIView,
+    RetrieveUpdateDestroyAPIView,
 )
 
 from .models import Product
 from .serializers import ProductSerializer
 
-class ListProductsAPIView(ListAPIView):
+class ListCreateProductsAPIView(ListCreateAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
 
-class CreateProductAPIView(CreateAPIView):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
-
-class RetrieveProductAPIView(RetrieveAPIView):
+class RetrieveUpdateDestroyProductAPIView(RetrieveUpdateDestroyAPIView):
     queryset = Product.objects.all()
     serializer_class = ProductSerializer
     lookup_field = 'slug'
-
-class UpdateProductAPIView(UpdateAPIView):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
-    lookup_field = 'slug'
-
-class DestroyProductAPIView(DestroyAPIView):
-    queryset = Product.objects.all()
-    serializer_class = ProductSerializer
-    lookup_field = 'slug'
-
 
 
 

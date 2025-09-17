@@ -9,6 +9,13 @@
 
 
 
+GET http://127.0.0.1:8000/api/products/
+Content-Type: application/json
+
+
+###
+
+
 POST http://127.0.0.1:8000/api/products/create/
 Content-Type: application/json
 
@@ -21,14 +28,14 @@ Content-Type: application/json
 ###
 
 
-GET http://127.0.0.1:8000/api/products/retrieve/t-shirt/
+GET http://127.0.0.1:8000/api/products/t-shirt/
 Content-Type: application/json
 
 
 ###
 
 
-PUT http://127.0.0.1:8000/api/products/update/t-shirt/
+PUT http://127.0.0.1:8000/api/products/t-shirt/
 Content-Type: application/json
 
 {
@@ -39,7 +46,7 @@ Content-Type: application/json
 
 ###
 
-PATCH  http://127.0.0.1:8000/api/products/update/hat/
+PATCH  http://127.0.0.1:8000/api/products/hat/
 Content-Type: application/json
 
 {
@@ -49,7 +56,7 @@ Content-Type: application/json
 
 ###
 
-DELETE  http://127.0.0.1:8000/api/products/destroy/hat/
+DELETE  http://127.0.0.1:8000/api/products/hat/
 Content-Type: application/json
 
 
@@ -61,44 +68,5 @@ Content-Type: application/json
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-GET http://127.0.0.1:8000/api/products/
-Content-Type: application/json
-
-###
-
-GET http://127.0.0.1:8000/api/users/1
-Content-Type: application/json
-
-###
-
-DELETE http://127.0.0.1:8000/api/users/3
-Content-Type: application/json
-
-###
-
-
-PUT http://127.0.0.1:8000/api/users/1/update/
-Content-Type: application/json
-
-{
-    "username": "Jack",
-    "deck": {
-        "one": "uno"
-    }
-}
 
 
