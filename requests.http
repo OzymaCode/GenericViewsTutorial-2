@@ -1,0 +1,40 @@
+
+
+GET http://127.0.0.1:8000/api/users
+Content-Type: application/json
+
+###
+
+GET http://127.0.0.1:8000/api/users/1
+Content-Type: application/json
+
+###
+
+DELETE http://127.0.0.1:8000/api/users/3
+Content-Type: application/json
+
+###
+
+POST http://127.0.0.1:8000/api/users/
+Content-Type: application/json
+
+{
+    "username": "Jack",
+    "deck": {
+        "hello": "hola",
+    }
+}
+
+###
+
+PUT http://127.0.0.1:8000/api/users/1/update/
+Content-Type: application/json
+
+{
+    "username": "Jack",
+    "deck": {
+        "one": "uno"
+    }
+}
+
+
