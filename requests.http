@@ -1,5 +1,80 @@
 
 
+
+
+
+
+
+
+
+
+
+POST http://127.0.0.1:8000/api/products/create/
+Content-Type: application/json
+
+{
+    "slug": "t-shirt",
+    "name": "T-shirt",
+    "price": 10
+}
+
+###
+
+
+GET http://127.0.0.1:8000/api/products/retrieve/t-shirt/
+Content-Type: application/json
+
+
+###
+
+
+PUT http://127.0.0.1:8000/api/products/update/t-shirt/
+Content-Type: application/json
+
+{
+    "slug": "hat",
+    "name": "Hat",
+    "price": 10
+}
+
+###
+
+PATCH  http://127.0.0.1:8000/api/products/update/hat/
+Content-Type: application/json
+
+{
+    "price": 8
+}
+
+
+###
+
+DELETE  http://127.0.0.1:8000/api/products/destroy/hat/
+Content-Type: application/json
+
+
+###
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 GET http://127.0.0.1:8000/api/products/
 Content-Type: application/json
 
@@ -15,16 +90,6 @@ Content-Type: application/json
 
 ###
 
-POST http://127.0.0.1:8000/api/products/create/
-Content-Type: application/json
-
-{
-    "slug": "t-shirt",
-    "name": "T-shirt",
-    "price": 10
-}
-
-###
 
 PUT http://127.0.0.1:8000/api/users/1/update/
 Content-Type: application/json
